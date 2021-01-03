@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForRecordHome,force:appHostable">
+    <aura:attribute name="password" type="String"/>
+    <div class="slds-card slds-m-bottom_x-large">
+        <div class="slds-m-around_x-medium">
+            <h1 class="slds-align_absolute-center slds-text-heading_large slds-m-bottom_x-large">Liquid Tracker</h1>
+            
+        <lightning:recordEditForm aura:id="recordEditForm" objectApiName="Medication__c">
+            <lightning:messages />
+            <div class="slds-grid slds-m-around_x-small">
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning:inputField fieldName="Green_Tea__c" />
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning:inputField fieldName="Chia_Seeds__c" />
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning:inputField fieldName="Lemongrass_Tea__c" />
+                </div>
+                <div class="slds-col slds-size_1-of-4">
+                    <lightning:inputField fieldName="Lemon_with_Warm_Water__c" />
+                </div>
+            </div>
+            <lightning:button class="slds-m-around_small" variant="brand" type="submit" name="Save" label="Save" />
+        </lightning:recordEditForm>
+
+        </div>
+    </div>
+</aura:component>
